@@ -1,62 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <title>Ruan Manoel - Portfólio Pessoal</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="#" class="logo">Portfólio.</a>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfólio</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="bars-animation">
-            <div class="bar" style="--i:6;"></div>
-            <div class="bar" style="--i:5;"></div>
-            <div class="bar" style="--i:4;"></div>
-            <div class="bar" style="--i:3;"></div>
-            <div class="bar" style="--i:2;"></div>
-            <div class="bar" style="--i:1;"></div>
-        </div>
-        <section class="home">
-            <div class="home-info">
-                <h1>Ruan Manoel</h1>
-                <h2>Eu sou 
-                    <span style="--i:4;" data-text="Desenvolvedor Frontend"> Desenvolvedor Frontend</span>
-                    <span style="--i:3;" data-text="Designer">Designer</span>
-                    <span style="--i:2;" data-text="Desenvolvedor Frontend"> Desenvolvedor Frontend</span>
-                    <span style="--i:1;" data-text="Designer">Designer</span>
-                    
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, omnis. 
-                    Beatae hic sint aut laboriosam ipsa non sunt labore esse eveniet, 
-                    nostrum eum placeat tenetur nemo deserunt quis distinctio facilis.</p>
-                
-                <div class="btn-sci">
-                    <a href="#" class="btn">Download CV</a>
-                    <div class="sci">
-                        <a href="https://github.com/ruuanmanoel" target="_blank"><i class='bx bxl-github'></i></a>
-                        <a href="https://www.linkedin.com/in/ruuanmanoel" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                        <a href="https://www.instagram.com/ruanmanoel_" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="home-img">
-                <div class="img-box">
-                    <div class="img-item">
-                        <img src="/assets/profile.png" alt="perfil">
-                    </div>
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruan Manoel - Engenheiro de Software</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&icon_names=computer"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <section id="home">
+        <header>
+          <h2>Ruan Manoel<span class="underline">_</span></h2>
+          <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul id="menu">
+            <li><a href="#">// home</a></li>
+            <li><a href="#experiencias">// experiências</a></li>
+            <li><a href="#projects-section">// projetos</a></li>
+            <li><a href="#contact">// contato</a></li>
+          </ul>
+        </header>
+
+        <section id="home-principal">
+          <section id="home-info">
+            <h1 class="nome">Ruan Manoel</h1>
+            <span>ENGENHEIRO DE SOFTWARE, FULLSTACK & MOBILE</span>
+          </section>
         </section>
-    </body>
+      </section>
+      <section id="experiencias">
+        <h2>Minhas Experiências</h2>
+        <div id="cards">
+          <div class="card">
+            <div class="title">
+              <div class="icon">
+                <span class="material-symbols-outlined"> computer </span>
+              </div>
+              <div class="card-experiencia-info">
+                <h3>Desenvolvedor</h3>
+                <span>de Software</span>
+              </div>
+            </div>
+            <div class="description">
+              <span
+                >Com uma sólida experiência em programação funcional e POO, eu
+                sou um desenvolvedor versátil, fluente em diversas linguagens de
+                programação, incluindo JavaScript, TypeScript, C e Java.
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">
+              <div class="icon">
+                <span class="material-symbols-outlined"> computer </span>
+              </div>
+              <div class="card-experiencia-info">
+                <h3>Fullstack Dev</h3>
+                <span>React, NodeJS</span>
+              </div>
+            </div>
+            <div class="description">
+              <span
+                >Desenvolvedor Full Stack com 1 ano de experiência na Vieira
+                BPO, especializado no uso de React para front-end e Node.js para
+                back-end. Durante esse período, tive a oportunidade de trabalhar
+                em projetos desafiadores.
+              </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">
+              <div class="icon">
+                <span class="material-symbols-outlined"> computer </span>
+              </div>
+              <div class="card-experiencia-info">
+                <h3>React Native Dev</h3>
+                <span>Android, IOS</span>
+              </div>
+            </div>
+            <div class="description">
+              <span
+                >Tenho experiência prática no desenvolvimento de aplicações
+                móveis utilizando React Native, criando apps para Android e iOS
+                com um design responsivo e intuitivo.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects-section">
+        <h2>Meus Projetos</h2>
+        <section id="projects">
+          <a href="https://inverted-world-hp64qdqfy-ruuanmanoels-projects.vercel.app/" target="_blank">
+          <div class="project">
+            <img src="light-theme.png" alt="" />
+            <div class="footer">
+              <h4>Fãs Stranger Things</h4>
+              <span>Web Developer</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://ruuanmanoel.github.io/doctorcareworkshop/" target="_blank">
+          <div class="project">
+            <img src="project-doctor.png" alt="" />
+            <div class="footer">
+              <h4>DoctorCare</h4>
+              <span>Web Developer</span>
+            </div>
+          </div>
+        </a>
+          <a href="https://designer-agency.vercel.app/" target="_blank">
+
+            <div class="project">
+              <img src="mksagency.png" alt="" />
+              <div class="footer">
+                <h4>MKS Agency</h4>
+                <span>Web Developer</span>
+              </div>
+            </div>
+          </a>
+        </section>
+      </section>
+      <section id="contact">
+        <h2>Contato</h2>
+        <div id="contact-container">
+          <div id="contact-question">
+            <h4>Dísponivel para trabalhos freelance</h4>
+            <span
+              >Está com uma ideia para um projeto excitante e precisa de ajuda?
+              Me envie um email ou fale comigo pelo likendin.
+            </span>
+          </div>
+          <div id="contact-andress">
+            <span
+              ><a href="mailto:ruanmanoelcode@gmail.com"
+                >ruanmanoelcode@gmail.com</a
+              ></span
+            >
+            <div>
+              <a href="https://github.com/ruuanmanoel" target="_blank"
+                ><i class="bx bxl-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ruuanmanoel" target="_blank"
+                ><i class="bx bxl-linkedin"></i
+              ></a>
+
+              <a href="https://www.instagram.com/ruanmanoel_" target="_blank"
+                ><i class="bx bxl-instagram-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
