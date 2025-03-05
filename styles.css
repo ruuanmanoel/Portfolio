@@ -20,7 +20,9 @@ body {
   background-color: var(--primary-color);
 }
 main {
+  max-width: 1800px;
   height: 100%;
+  margin: 0 auto;
 }
 header {
   height: 100px;
@@ -126,6 +128,7 @@ ul li {
   border-collapse: collapse;
   flex: 1;
   height: 100%;
+  min-height: 250px;
   padding: 30px;
 }
 .card:nth-child(2) {
@@ -195,6 +198,7 @@ ul li {
 .project img {
   flex: 1;
   border-radius: 16px 16px 0 0;
+  object-fit: cover;
 }
 .project .footer {
   background: #121327;
@@ -300,11 +304,5 @@ a {
   /* Quando o menu estiver ativo, exibir as opções */
   ul.active {
     display: block;
-  }
-}
-
-@media screen and (max-width: 810px) {
-  ul {
-    display: none;
   }
 }
