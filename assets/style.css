@@ -37,7 +37,8 @@ body{
     max-height: 600px;
     display: flex;
     flex-direction: column;
-    background: url(images/fundo-mobile.jpg) ;
+    background: url(images/fundo-mobile.jpg) no-repeat ;
+    background-size: cover;
     background-position: center top;
     position: relative;
     z-index: 2;
@@ -115,6 +116,9 @@ header>div{
         text-align: center;
         padding-block: 2.4rem;
        
+    }
+    a:hover{
+        color: var(--touch-action);
     }
 }
 #navigation{
@@ -200,6 +204,7 @@ header>div{
 }
 .card{
     min-width: 320px;
+    max-width: 380px;
     width: 90%;
     min-height: 200px;
     padding: 1rem;
@@ -274,16 +279,19 @@ header>div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 2rem;
 
 }
 .projeto{
     min-width: 320px;
+    max-width: 400px;
     width: 90%;
     height: 600px;
     display: flex;
     flex-direction: column;
     border-radius: .8rem;
     overflow: hidden;
+    
  
 }
 .container-imagem {
@@ -378,5 +386,67 @@ header>div{
         color: var(--text);
         text-align: center;
         font-size: 3rem;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .container{
+        max-width: 1200px;
+    }
+    #home header{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+    #cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6rem;
+
+
+    }
+    .card{
+        width: 350px;
+    }
+    .projeto{
+        width: 370px;
+        height:350px;
+    }
+    .container-imagem{
+        height:80%;
+    }
+    #projetos-container{
+        width: 100%;
+        max-width: 1200px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: .1rem;
+    }
+    #navigation{
+        display: flex;
+        width: 500px;
+        height: 100%;
+        position: static;
+        align-items: center;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 1.5rem;
+        font-weight: 700;
+        a{
+            display: block;
+            text-decoration: none;
+            color: var(--text);
+            transition: 1s;
+        }
+        a:hover{
+            color: var(--text-secondary);
+        }
+        
+    }
+    i#open-menu,#close-menu{
+        display: none;
     }
 }
