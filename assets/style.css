@@ -459,3 +459,14 @@ header>div{
         display: none;
     }
 }
+@media screen and (max-width:337px) {
+    #profile h2{
+        font-size: 3rem;
+        letter-spacing: .7rem;
+    }
+    #profile h3{
+        font-size: .8rem;
+        letter-spacing: .2rem;
+        font-weight: 400;
+    }
+}
