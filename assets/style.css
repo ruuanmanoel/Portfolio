@@ -399,6 +399,15 @@ header>div{
         margin: 0 auto;
 
     }
+    #profile h2{
+        font-size: 8rem;
+        letter-spacing: .7rem;
+    }
+    #profile h3{
+        font-size: 2rem;
+        letter-spacing: .38rem;
+        font-weight: 400;
+    }
     #cards{
         flex-direction: row;
         flex-wrap: wrap;
@@ -423,7 +432,7 @@ header>div{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        gap: .1rem;
+        gap: 1.5rem;
     }
     #navigation{
         display: flex;
